@@ -1,23 +1,34 @@
-.container {
-	background-color: black;
+.wrapper {
+	background-color: white;
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	height: 90%;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
+	column-gap: 2rem;
 }
 .container > div {
-	flex: 1;
 	margin: 1rem;
 	height: calc(100% - 2rem);
 	border-radius: 0.5rem;
 }
 .container .leftCont {
 	margin-right: 0.5rem;
+	background-color: black;
+	width: 40%;
 }
 .container .rightCont {
 	margin-left: 0.5rem;
 	background-color: white;
+	width: 50%;
 }
 .leftCont {
 	display: flex;
@@ -26,9 +37,13 @@
 	flex: 2;
 	margin: 2rem;
 }
+.textWrapper {
+	display: flex;
+	justify-content: right;
+}
 .texts {
 	height: auto;
-	width: 25%;
+	width: auto;
 	max-width: 40%;
 	background-color: white;
 	border-radius: 0.5rem;
@@ -36,4 +51,24 @@
 	display: flex;
 	align-items: center;
 	padding: 0.5rem;
+	font-weight: 500;
+}
+.loginBox {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	row-gap: 1rem;
+	width: 60% !important;
+	margin: auto;
+	border: 1px solid black;
+	padding: 1rem;
+}
+.inputField {
+	display: flex;
+	align-items: center;
+}
+.buttonWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }

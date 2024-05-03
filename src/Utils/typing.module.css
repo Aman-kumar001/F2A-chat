@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: center;
 }
-span {
+.typeCont span {
 	height: 5px;
 	width: 5px;
 	background-color: black;
